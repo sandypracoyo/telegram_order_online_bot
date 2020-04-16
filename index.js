@@ -182,17 +182,5 @@ Contoh : /daftar *john doe*-*john*-*john@gmail.com*-*09123232*`,{
     }
 })
 
-bot.onText(/\/history/, async(msg)=>{
-    const id = msg.from.id
-    try {
-        const respon = await axios.get(`https://sandypracoyo-backendonlineorder.glitch.me/orderdetail/${id}`)
-        const data = respon.data.data
-        data.forEach((e) => {
-            bot.sendMessage(msg.chat.id,`${e.id}`)
-        })
-        console.log(i);
-    } catch (error) {
-        console.log(error);
-    }
-})
+
 
