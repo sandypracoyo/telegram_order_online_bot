@@ -1,0 +1,21 @@
+{
+  "name": "telegram_ecommerce_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "midtrans-client": "^1.1.0",
+    "node-telegram-bot-api": "^0.40.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
